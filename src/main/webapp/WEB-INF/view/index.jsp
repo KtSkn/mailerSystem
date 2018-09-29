@@ -25,8 +25,8 @@
  </f:form>
  
  <p>
-	<c:url value="/db" var="messageUrl" />
-	<a href="${messageUrl}">Click to enter</a>
+	<c:url value="/dbtest" var="messageUrl" />
+	<a href="${messageUrl}">dbtest</a>
  </p>
  
  </body>

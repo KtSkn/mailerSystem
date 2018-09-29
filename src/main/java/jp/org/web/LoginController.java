@@ -28,14 +28,8 @@ public class LoginController {
  return "top";
  }
  
- @RequestMapping(value = "/db", method = RequestMethod.GET)
- public String test(Model model) {
- return "home";
- }
- 
  @Autowired
  private JdbcTemplate jdbcTemplate;
-
 
  @RequestMapping(value = "/dbtest", method = RequestMethod.GET)
 public String home(Locale locale, Model model) {

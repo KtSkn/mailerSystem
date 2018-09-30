@@ -28,6 +28,12 @@
 	<c:url value="/dbtest" var="messageUrl" />
 	<a href="${messageUrl}">dbtest</a>
  </p>
+
+ <p>
+	<c:url value="/makeAccount" var="messageUrl" />
+	<a href="${messageUrl}">アカウント作成</a>
+ </p>
+
  
  </body>
 </html>

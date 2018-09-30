@@ -8,10 +8,10 @@
 <html>
  <head>
  <meta charset="utf-8">
- <title>トップ</title>
+ <title>アカウント作成</title>
  </head>
  <body>
- ようこそ<c:out value="${loginName}" />さん
+ 	アカウント作成
  
  <p>
 	<c:url value="/mailList" var="messageUrl" />

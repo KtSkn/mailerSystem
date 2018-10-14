@@ -20,7 +20,8 @@ public class LoginController {
  public String index(Model model) {
  return "index";
  }
- 
+
+// ログイン時 
 @RequestMapping(value = "/login", method = RequestMethod.POST)
 public String login(Model model, @ModelAttribute("loginForm") LoginForm loginForm) {
  model.addAttribute("loginName", loginForm.getLoginName());
@@ -28,6 +29,7 @@ public String login(Model model, @ModelAttribute("loginForm") LoginForm loginFor
  return "top";
  }
  
+// アカウント作成
 @RequestMapping(value = "/makeAccount", method = RequestMethod.GET)
 public String makeAccount(Model model, @ModelAttribute("loginForm") LoginForm loginForm) {
  model.addAttribute("loginName", loginForm.getLoginName());
@@ -35,16 +37,25 @@ public String makeAccount(Model model, @ModelAttribute("loginForm") LoginForm lo
  return "makeAccount";
  }
 
+// アカウント設定
+@RequestMapping(value = "/accountSetting", method = RequestMethod.GET)
+public String accountSetting(Model model, @ModelAttribute("loginForm") LoginForm loginForm) {
+ model.addAttribute("loginName", loginForm.getLoginName());
+ 
+ return "accountSetting";
+ }
+
+
 @Autowired
 private JdbcTemplate jdbcTemplate;
 
 @RequestMapping(value = "/dbtest", method = RequestMethod.GET)
-public String home(Locale locale, Model model) {
+public String dbtest(Locale locale, Model model) {
 
    List<Map<String, Object>>  list = jdbcTemplate.queryForList("select * from mst_user");
 
    model.addAttribute("data", list.get(0));
-   return "home";
+   return "dbtest";
 }
 
  

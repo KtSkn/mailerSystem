@@ -14,9 +14,15 @@
  	アカウント作成
  
  <p>
-	<c:url value="/mailList" var="messageUrl" />
-	<a href="${messageUrl}">送受信一覧</a>
+	<c:url value="/" var="messageUrl" />
+	<a href="${messageUrl}">ログイン画面</a>
  </p>
+
+ <p>
+	<c:url value="/accountSetting" var="messageUrl" />
+	<a href="${messageUrl}">アカウント設定</a>
+ </p>
+
  
  </body>
 </html>

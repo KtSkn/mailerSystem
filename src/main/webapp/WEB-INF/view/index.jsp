@@ -30,8 +30,8 @@
  </p>
 
  <p>
-	<c:url value="/makeAccount" var="messageUrl" />
-	<a href="${messageUrl}">アカウント作成</a>
+	<c:url value="/accountSetting" var="messageUrl" />
+	<a href="${messageUrl}">アカウント設定</a>
  </p>
 
  

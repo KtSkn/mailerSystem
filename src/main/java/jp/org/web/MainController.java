@@ -21,24 +21,6 @@ public class MainController {
  return "mailList";
  }
  
-// @RequestMapping(value = "/login", method = RequestMethod.POST)
-// public String login(Model model, @ModelAttribute("loginForm") LoginForm loginForm) {
-// model.addAttribute("loginName", loginForm.getLoginName());
-// 
-// return "top";
-// }
-// 
-// @Autowired
-// private JdbcTemplate jdbcTemplate;
-//
-// @RequestMapping(value = "/dbtest", method = RequestMethod.GET)
-//public String home(Locale locale, Model model) {
-//
-//   List<Map<String, Object>>  list = jdbcTemplate.queryForList("select * from mst_user");
-//
-//   model.addAttribute("data", list.get(0));
-//   return "home";
-//}
 
  
 

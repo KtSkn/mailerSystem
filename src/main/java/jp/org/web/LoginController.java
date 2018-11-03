@@ -45,7 +45,7 @@ public String accountSetting(Model model, @ModelAttribute("loginForm") LoginForm
  return "accountSetting";
  }
 
-
+//dbtest用
 @Autowired
 private JdbcTemplate jdbcTemplate;
 

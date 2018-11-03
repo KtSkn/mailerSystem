@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.org.form.LoginForm;
  
-//メイン画面用のコントローラー 
+ 
 @Controller
 public class MainController {
  @RequestMapping(value = "/mailList", method = RequestMethod.GET)

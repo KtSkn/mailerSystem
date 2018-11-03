@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.org.form.LoginForm;
  
- 
+//ログイン用のコントローラー 
 @Controller
 public class LoginController {
  @RequestMapping(value = "/", method = RequestMethod.GET)

@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body{
+	background: red;
+	
+}
+
+.table .border{
+	border-spacing:20px;
+}
